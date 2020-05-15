@@ -1,26 +1,33 @@
 {
-  "name": "rkallan-eslint-config",
-  "version": "1.0.1",
-  "description": "Eslint Rules",
-  "files": [
-    "src"
-  ],
-  "main": "scr/index.js",
-  "scripts": {
-    "build": "echo \"Error: no build specified\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Ravi Kallan",
-  "license": "ISC",
-  "devDependencies": {
-    "semantic-release": "^17.0.7"
-  },
-  "plugins": [
-    "@semantic-release/commit-analyzer",
-    "@semantic-release/release-notes-generator",
-    "@semantic-release/changelog",
-    "@semantic-release/github",
-    "@semantic-release/npm",
-    "@semantic-release/git"
-  ]
+    "name": "rkallan-eslint-config",
+    "version": "1.0.0",
+    "description": "Eslint Rules",
+    "files": [
+        "build"
+    ],
+    "main": "build/index.js",
+    "scripts": {
+        "build": "babel src -d build",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Ravi Kallan",
+    "license": "MIT",
+    "devDependencies": {
+        "@babel/cli": "^7.8.4",
+        "@babel/core": "^7.9.6",
+        "@babel/preset-env": "^7.9.6",
+        "prettier": "^2.0.5",
+        "semantic-release": "^17.0.7"
+    },
+    "plugins": [
+        "@semantic-release/commit-analyzer",
+        "@semantic-release/release-notes-generator",
+        "@semantic-release/changelog",
+        "@semantic-release/github",
+        "@semantic-release/npm",
+        "@semantic-release/git"
+    ],
+    "dependencies": {
+        "rkallan-prettier-config": "^1.0.4"
+    }
 }
