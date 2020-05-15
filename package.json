@@ -10,8 +10,16 @@
         "build": "babel src -d build",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "author": "Ravi Kallan",
     "license": "MIT",
+    "author": "Ravi Kallan <r.kallan@upcmail.nl>",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:rkallan/eslint-config.git"
+    },
+    "bugs": {
+        "url": "https://github.com/rkallan/eslint-config/issues/new",
+        "email": "r.kallan@upcmail.nl"
+    },
     "devDependencies": {
         "@babel/cli": "^7.8.4",
         "@babel/core": "^7.9.6",
