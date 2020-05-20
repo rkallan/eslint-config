@@ -24,14 +24,10 @@
         "url": "https://github.com/rkallan/eslint-config/issues/new",
         "email": "r.kallan@upcmail.nl"
     },
-    "main": "build/index.js",
+    "main": "index.js",
     "files": [
-        "build"
+        "*.js"
     ],
-    "scripts": {
-        "build": "babel src -d build",
-        "format": "prettier --write \"./src/**/*\" \"!node_modules/**\""
-    },
     "dependencies": {
         "rkallan-prettier-config": "^2.0.0"
     },
@@ -41,6 +37,11 @@
         "@babel/preset-env": "^7.9.6",
         "prettier": "^2.0.5",
         "semantic-release": "^17.0.7"
+    },
+    "scripts": {
+        "build": "babel src -d build",
+        "build:npm": "babel src -d .",
+        "format": "prettier --write \"./src/**/*\" \"!node_modules/**\""
     },
     "plugins": [
         "@semantic-release/commit-analyzer",
