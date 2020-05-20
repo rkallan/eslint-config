@@ -1,6 +1,6 @@
 # eslint-config
 
-> My personal [Prettier](https://prettier.io) config.
+> Shareable [ESLint](https://eslint.org/) config.
 
 ## Usage
 
@@ -14,8 +14,8 @@ npm install rkallan-eslint-config
 
 ```js
 module.exports = {
-    extends: ["./node_modules/rkallan-eslint-config"],
+    extends: ["rkallan-eslint-config"],
 };
 ```
 
-NOTE: use the url to node_modules. Needs to figure out why it fails when use rkallan-eslint-config
+NOTE: On config error use ./node_modules/rkallan-eslint-config
