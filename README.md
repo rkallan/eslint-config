@@ -14,8 +14,6 @@ npm install rkallan-eslint-config
 
 ```js
 module.exports = {
-    extends: ["rkallan-eslint-config"],
+    extends: ["./node_modules/rkallan-eslint-config"],
 };
 ```
-
-NOTE: On config error use ./node_modules/rkallan-eslint-config
