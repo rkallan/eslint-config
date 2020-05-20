@@ -244,7 +244,7 @@ module.exports = {
         // https://eslint.org/docs/rules/max-len
         "max-len": [
             "error",
-            100,
+            140,
             2,
             {
                 ignoreUrls: true,
