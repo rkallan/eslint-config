@@ -17,3 +17,5 @@ module.exports = {
     extends: ["./node_modules/rkallan-eslint-config"],
 };
 ```
+
+run `npx sort-package-json` to sort package.json
