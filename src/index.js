@@ -20,22 +20,7 @@ module.exports = {
     parserOptions: {
         ecmaVersion: 11,
         sourceType: "module",
-        ecmaFeatures: {
-            jsx: true,
-            globalReturn: true,
-        },
     },
-    extends: [
-        "./best-practices",
-        "./errors",
-        "./node",
-        "./style",
-        "./variables",
-        "./es6",
-        "./imports",
-        "./strict",
-        "eslint:recommended",
-        "plugin:prettier/recommended",
-    ],
+    extends: ["./best-practices", "./errors", "./node", "./style", "./variables", "./es6", "./imports", "./strict"],
     plugins: ["prettier"],
 };
