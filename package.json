@@ -24,7 +24,9 @@
     },
     "main": "index.js",
     "files": [
-        "index.js"
+        "*.js",
+        "!.*",
+        "!*.config.*"
     ],
     "scripts": {
         "build": "babel src -d build",
