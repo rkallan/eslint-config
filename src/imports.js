@@ -85,6 +85,9 @@ module.exports = {
                     "**/protractor.conf.js", // protractor config
                     "**/protractor.conf.*.js", // protractor config
                     "**/karma.conf.js", // karma config
+                    "**/.prettierrc", // prettier config
+                    "**/.prettierrc.*", // prettier config
+                    "**/prettier.config.js", // prettier config
                 ],
                 optionalDependencies: false,
             },

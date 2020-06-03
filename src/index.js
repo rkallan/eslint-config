@@ -1,4 +1,41 @@
 module.exports = {
-    extends: ["./best-practices", "./errors", "./node", "./style", "./variables", "./es6", "./imports", "./strict"].map(require.resolve),
-    rules: {},
+    env: {
+        browser: true,
+        es6: true,
+        node: true,
+        jest: true,
+    },
+    globals: {
+        window: true,
+        document: true,
+        navigator: true,
+        page: true,
+        browser: true,
+        context: true,
+        jestPuppeteer: true,
+        self: true,
+        Atomics: "readonly",
+        SharedArrayBuffer: "readonly",
+    },
+    parserOptions: {
+        ecmaVersion: 11,
+        sourceType: "module",
+        ecmaFeatures: {
+            jsx: true,
+            globalReturn: true,
+        },
+    },
+    extends: [
+        "./best-practices",
+        "./errors",
+        "./node",
+        "./style",
+        "./variables",
+        "./es6",
+        "./imports",
+        "./strict",
+        "eslint:recommended",
+        "plugin:prettier/recommended",
+    ],
+    plugins: ["prettier"],
 };
