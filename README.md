@@ -19,3 +19,4 @@ module.exports = {
 ```
 
 run `npx sort-package-json` to sort package.json
+run `npx npm-check-updates` to check packages for updates
