@@ -42,7 +42,7 @@
         }
     },
     "dependencies": {
-        "confusing-browser-globals": ">= 1.0.9"
+        "confusing-browser-globals": ">=1.0.10"
     },
     "devDependencies": {
         "@babel/cli": "^7.15.7",
@@ -54,13 +54,13 @@
         "eslint-plugin-prettier": "^4.0.0",
         "husky": "^7.0.2",
         "prettier": "^2.4.1",
-        "rkallan-prettier-config": "^2.0.2",
+        "rkallan-prettier-config": "^2.1.0",
         "semantic-release": "^18.0.0",
         "@prettier/plugin-xml": "^1.0.2",
         "cz-conventional-changelog": "^3.3.0"
     },
     "peerDependencies": {
-        "confusing-browser-globals": ">= 1.0.9",
+        "confusing-browser-globals": ">=1.0.10",
         "eslint": ">=7.32.0",
         "eslint-plugin-import": ">=2.24.2"
     },
